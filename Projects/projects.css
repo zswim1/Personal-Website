@@ -29,30 +29,47 @@
     font-weight: bold;
     font-size: 26px;
     margin-top: 3%;
+    margin-left: -2%;
+}
+
+.techHeader{
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: .6%;
+}
+
+.dateInfo{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 17px;
 }
 
 #mainContent{
     width: 70%;
-    margin-left: 15%;
+    margin-left: 17%;
 }
 
 #ttimage{
-    width: 30%;
+    width: 50%;
 }
 
 #bballimage{
-    width: 30%;
+    width: 50%;
 }
 
 #courseimage{
-    width: 30%;
+    width: 50%;
 }
 
 #droneimage{
-    width: 30%;
+    width: 50%;
 }
 
 .description{
     margin-top: .5%;
     font-size: 16px;
+}
+
+#VrDrone{
+    margin-bottom: 5%;
 }
