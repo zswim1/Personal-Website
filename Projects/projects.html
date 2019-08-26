@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="projects.css">
+
+<script>
+    function gotoHome(){
+        window.location='../Home/index.html';
+    }
+    function gotoPictures(){
+        window.location='../Photos/photos.html';
+    }
+    function gotoProjects(){
+        window.location='../Projects/projects.html';
+    }
+
+
+    function makeBold(item){
+        item.style.fontWeight = 'bold';
+    }
+    function removeBold(item){
+        item.style.fontWeight = 'normal';
+    }
+</script>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+    </head>
+    <body>
+        <div id="topBar">
+            <div id="nameHeader">Zachary Swim</p>
+            </div>
+            <div id="sections">
+                    <button id="homeLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="gotoHome()">Home</button>
+                    <button id="projectLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)">Projects</button>
+                    <button id="photoLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="gotoPictures()">Photos</button>
+            </div>
+        </div>
+        <div id="mainContent">
+            <div id="TravelTalk">
+                <div class="projectHeader">TravelTalk</div>
+                <img id="ttimage">
+                <div class="description" id="ttDescription">
+                    A social platform that allows users to engage in discussions and share their experiences about different places throughout the world.
+                </div>
+            </div>
+
+            <div id="VrBasketball">
+                <div class="projectHeader">VR Basketball</div>
+                <div class="youtubeLink">
+                    https://www.youtube.com/watch?v=TpBwJUWcQLg&feature=youtu.be
+                </div>
+                <img id="bballimage" src="basketball.png">
+                <div class="description" id="bballDescription">
+                    A VR basketball game where the player can practice shooting the ball or race against the clock trying to make baskets.
+                </div>
+
+            </div>
+
+            <div id="VrDrone">
+                    <div class="projectHeader">VR Drone Simulator</div>
+                    <div class="youtubeLink">
+                        https://www.youtube.com/watch?v=1xxuXDVefUE
+                    </div>
+                    <img id="droneimage" src="drone.PNG">
+                    <div class="description" id="droneDescription">
+                        A VR third person drone simulator where the player tries to race through a city while driving through gates.
+                    </div>
+            </div>
+
+            <div id="CourseMaster">
+                    <div class="projectHeader">Course Master</div>
+                    <img id="courseimage" src="CourseMaster.PNG">
+                    <div class="description" id="courseDescription">
+                        A web application where Purdue students can go to review the courses they have taken and remark on how difficult the course was, how many exams there were, whether attendance was necessary, and many other attributes. As well as leaving reviews, students can look at reviews other students have left to determine what classes they want to take.
+                    </div>
+            </div>
+
+            <div id="Milliman">
+                    <div class="projectHeader">Milliman</div>
+                    <div class="description" id="millDescription">
+                        Milliman
+                    </div>
+            </div>
+
+        </div>
+        </body>
+</html>

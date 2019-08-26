@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="photos.css">
+<script>
+    function gotoHome(){
+        window.location='../Home/index.html';
+    }
+    function gotoPictures(){
+        window.location='../Photos/photos.html';
+    }
+    function gotoProjects(){
+        window.location='../Projects/projects.html';
+    }
+
+
+    function makeBold(item){
+        item.style.fontWeight = 'bold';
+    }
+    function removeBold(item){
+        item.style.fontWeight = 'normal';
+    }
+</script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photos</title>
+    </head>
+    <body>
+        <div id="topBar">
+            <div id="nameHeader">Zachary Swim</p>
+            </div>
+            <div id="sections">
+                    <button id="homeLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="gotoHome()">Home</button>
+                    <button id="projectLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="gotoProjects()">Projects</button>
+                    <button id="photoLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)">Photos</button>
+            </div>
+        </div>
+        <div id="bottomPictures">
+            <div id="row1" class="row">
+                <img id="bikePic" src="bike.png">
+                <img id="footballPic" src="football.PNG">
+            </div>
+            <div id="row2" class="row">
+                <img id="familyPic" src="Family.jpg">
+                <img id="mountainPic" src="Mountain.JPG">
+            </div>
+        </div>
+    </body>
+</html>
