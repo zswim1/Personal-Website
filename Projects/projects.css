@@ -7,7 +7,7 @@
 }
 
 #nameHeader{
-    margin-top: 1%;
+    margin: 1.5vh 0%;
 }
 
 #sections{
@@ -25,10 +25,27 @@
     color: #606060;
 }
 
+#projectAndButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.infoButton{
+    margin-top: .8%;
+    margin-left: 5%;
+    border-radius: 8px;
+    background-color: lightgreen;
+    border: none;
+    color: #606060;
+    width: 90px;
+    /* background-color: green; */
+}
+
 .projectHeader{
     font-weight: bold;
     font-size: 26px;
-    margin-top: 3%;
     margin-left: -2%;
 }
 
@@ -49,20 +66,20 @@
     margin-left: 17%;
 }
 
-#ttimage{
+.projImage{
     width: 50%;
+}
+
+#ttimage{
 }
 
 #bballimage{
-    width: 50%;
 }
 
 #courseimage{
-    width: 50%;
 }
 
 #droneimage{
-    width: 50%;
 }
 
 .description{
@@ -72,4 +89,96 @@
 
 #VrDrone{
     margin-bottom: 5%;
+}
+
+#millContent{
+    display: none;
+}
+
+#ttContent{
+    display: none;
+}
+
+#courseContent{
+    display: none;
+}
+
+#bballContent{
+    display: none;
+}
+
+#droneContent{
+    display: none;
+}
+
+@media only screen and (max-width: 875px) {
+    .projImage{
+        width: 60%;
+        margin-left: 15%;
+    }
+    #mainContent{
+        width: 80%;
+        margin-left: 12%;
+    }
+    #sections{
+        width: 45%;
+    }
+    #nameHeader{
+        width: 25%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .projImage{
+        width: 75%;
+        margin-left: 7.5%;
+    }
+    #mainContent{
+        width: 90%;
+        margin-left: 6%;
+    }
+    .projectHeader{
+        font-size: 26px;
+        margin-left: -1%;
+    }
+    .description{
+        font-size: 13px;
+    }
+    #projectAndButton{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #mainContent{
+        /* background-color: pink; */
+    }
+    .projectHeader{
+        font-size: 20px;
+        text-align: center;
+    }
+    .dateInfo{
+        font-size: 15px;
+    }
+
+    .techHeader{
+        font-size: 15px;
+    }
+
+    body{
+        font-size: 13px;
+    }
+    #sections{
+        width: 65%;
+    }
+    #nameHeader{
+        width: 35%;
+        margin-left: 5%;
+    }
+    .description{
+        font-size: 13px;
+    }
+
 }

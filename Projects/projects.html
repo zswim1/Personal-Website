@@ -14,10 +14,23 @@
 
 
     function makeBold(item){
-        item.style.fontWeight = 'bold';
+        item.style.color = 'black';
     }
     function removeBold(item){
-        item.style.fontWeight = 'normal';
+        item.style.color = '#606060';
+    }
+
+    function expand(section, button){
+        var display = getComputedStyle(document.getElementById(section), null).display;
+        console.log(display)
+        if(display == "none"){
+            document.getElementById(section).style.display = "block";
+            document.getElementById(button).innerHTML = "Hide";
+        } else {
+            document.getElementById(section).style.display = "none";
+            document.getElementById(button).innerHTML = "Learn More";
+        }
+
     }
 </script>
 
@@ -28,7 +41,7 @@
     </head>
     <body>
         <div id="topBar">
-            <div id="nameHeader">Zachary Swim</p>
+            <div id="nameHeader">Zachary Swim
             </div>
             <div id="sections">
                     <button id="homeLink" class="topButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="gotoHome()">Home</button>
@@ -39,87 +52,112 @@
         <div id="mainContent">
 
             <div id="Milliman">
-                <div class="projectHeader">Milliman  <span class="dateInfo">Summer 2019</span></div>
-                <div class="description" id="millDescription">
-                    Summer Internship. Created a web application that was used primarily on the IPAD. Gathered, managed, and displayed large data sets stored on Salesforce. Added Email, Print, and Dropbox functionality using templates and API's.
+                <div id="projectAndButton">
+                    <div class="projectHeader">Milliman  <span class="dateInfo">Summer 2019</span></div>
+                    <button id="infoMill" class="infoButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="expand('millContent', 'infoMill')">Learn More</button>
                 </div>
-                <div class="techHeader">Technologies Used</div>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Adobe XD</li>
-                    <li>Salesforce API</li>
-                    <li>Ipad optimization</li>
-                </ul>
+                <div id="millContent">
+                    <div class="description" id="millDescription">
+                        Summer Internship where I created a web application that was used primarily on the IPAD. Gathered, managed, and displayed large data sets stored on Salesforce. Added Email, Print, and Dropbox functionality using templates and API's.
+                    </div>
+                    <div class="techHeader">Technologies Used</div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Adobe XD</li>
+                        <li>Salesforce API</li>
+                        <li>Ipad optimization</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="TravelTalk">
-                <div class="projectHeader">TravelTalk  <span class="dateInfo">Spring 2019</span></div>
-                <img id="ttimage">
-                <div class="description" id="ttDescription">
-                    A social platform that allows users to engage in discussions and share their experiences about different places throughout the world. Users were able to tag locations on a map that they had been to and discuss what they had thought about that location. Users were also able to follow and be followed by other users allowing their locations and thoughts to be shared with others.
+                <div id="projectAndButton">
+                    <div class="projectHeader">TravelTalk  <span class="dateInfo">Spring 2019</span></div>
+                    <button id="infoTT" class="infoButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="expand('ttContent', 'infoTT')">Learn More</button>
                 </div>
-                <div class="techHeader">Technologies Used</div>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Firebase hosting</li>
-                    <li>Map API</li>
-                </ul>
+                <div id="ttContent">
+                    <img id="ttimage" class="projImage">
+                    <div class="description" id="ttDescription">
+                        A social platform that allows users to engage in discussions and share their experiences about different places throughout the world. Users were able to tag locations on a map that they had been to and discuss what they had thought about that location. Users were also able to follow and be followed by other users allowing their locations and thoughts to be shared with others.
+                    </div>
+                    <div class="techHeader">Technologies Used</div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Firebase hosting</li>
+                        <li>Map API</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="CourseMaster">
-                <div class="projectHeader">Course Master  <span class="dateInfo">Fall 2018</span></div>
-                <img id="courseimage" src="CourseMaster.PNG">
-                <div class="description" id="courseDescription">
-                    A web application where Purdue students can go to review the courses they have taken and remark on how difficult the course was, how many exams there were, whether attendance was necessary, and many other attributes. As well as leaving reviews, students can look at reviews other students have left to determine what classes they want to take.
+                <div id="projectAndButton">
+                    <div class="projectHeader">Course Master  <span class="dateInfo">Fall 2018</span></div>
+                    <button id="infoCourse" class="infoButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="expand('courseContent', 'infoCourse')">Learn More</button>
                 </div>
-                <div class="techHeader">Technologies Used</div>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Angular</li>
-                    <li>Firebase hosting</li>
-                    <li>Purdue API</li>
-                </ul>
+                <div id=courseContent>
+                    <img id="courseimage" class="projImage" src="CourseMaster.PNG">
+                    <div class="description" id="courseDescription">
+                        A web application where Purdue students can go to review the courses they have taken and remark on how difficult the course was, how many exams there were, whether attendance was necessary, and many other attributes. As well as leaving reviews, students can look at reviews other students have left to determine what classes they want to take.
+                    </div>
+                    <div class="techHeader">Technologies Used</div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Angular</li>
+                        <li>Firebase hosting</li>
+                        <li>Purdue API</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="VrBasketball">
-                <div class="projectHeader">VR Basketball  <span class="dateInfo">Fall 2018</span></div>
-                <div class="youtubeLink">
-                    <a href="https://www.youtube.com/watch?v=TpBwJUWcQLg&feature=youtu.be">https://www.youtube.com/watch?v=TpBwJUWcQLg&feature=youtu.be</a>
+                <div id="projectAndButton">
+                    <div class="projectHeader">VR Basketball  <span class="dateInfo">Fall 2018</span></div>
+                    <button id="infoBBall" class="infoButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="expand('bballContent', 'infoBBall')">Learn More</button>
                 </div>
-                <img id="bballimage" src="basketball.png">
-                <div class="description" id="bballDescription">
-                    A VR basketball game where the player can practice shooting the ball or race against the clock trying to make baskets.
+                <div id="bballContent">
+                    <div class="youtubeLink">
+                        <a href="https://www.youtube.com/watch?v=TpBwJUWcQLg&feature=youtu.be">https://www.youtube.com/watch?v=TpBwJUWcQLg&feature=youtu.be</a>
+                    </div>
+                    <img id="bballimage" class="projImage" src="basketball.png">
+                    <div class="description" id="bballDescription">
+                        A VR basketball game where the player can practice shooting the ball or race against the clock trying to make baskets.
+                    </div>
+                    <div class="techHeader">Technologies Used</div>
+                    <ul>
+                        <li>Unity</li>
+                        <li>C#</li>
+                        <li>HTC Vive headset</li>
+                    </ul>
                 </div>
-                <div class="techHeader">Technologies Used</div>
-                <ul>
-                    <li>Unity</li>
-                    <li>C#</li>
-                    <li>HTC Vive headset</li>
-                </ul>
             </div>
 
             <div id="VrDrone">
-                <div class="projectHeader">VR Drone Simulator  <span class="dateInfo">Fall 2018</span></div>
-                <div class="youtubeLink">
-                        <a href="https://www.youtube.com/watch?v=1xxuXDVefUE">https://www.youtube.com/watch?v=1xxuXDVefUE</a>
+                <div id="projectAndButton">
+                    <div class="projectHeader">VR Drone Simulator  <span class="dateInfo">Fall 2018</span></div>
+                    <button id="infoDrone" class="infoButton" onmouseover="makeBold(this)" onmouseout="removeBold(this)" onclick="expand('droneContent', 'infoDrone')">Learn More</button>
                 </div>
-                <img id="droneimage" src="drone.PNG">
-                <div class="description" id="droneDescription">
-                    A VR third person drone simulator where the player tries to race through a city while driving through gates.
+                <div id="droneContent">
+                    <div class="youtubeLink">
+                            <a href="https://www.youtube.com/watch?v=1xxuXDVefUE">https://www.youtube.com/watch?v=1xxuXDVefUE</a>
+                    </div>
+                    <img id="droneimage" class="projImage" src="drone.PNG">
+                    <div class="description" id="droneDescription">
+                        A VR third person drone simulator where the player tries to race through a city while driving through gates.
+                    </div>
+                    <div class="techHeader">Technologies Used</div>
+                    <ul>
+                        <li>Unity</li>
+                        <li>C#</li>
+                        <li>HTC Vive headset</li>
+                    </ul>
                 </div>
-                <div class="techHeader">Technologies Used</div>
-                <ul>
-                    <li>Unity</li>
-                    <li>C#</li>
-                    <li>HTC Vive headset</li>
-                </ul>
             </div>
         </div>
     </body>
