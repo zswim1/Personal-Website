@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #topBar{
@@ -42,8 +42,7 @@ body{
 
 #mainContent{
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
     margin-top: 2%;
     display: flex;
     align-items: center;
@@ -61,7 +60,7 @@ body{
 #picture{
     /* margin-top: 3%; */
     width: 40%;
-    height: 56%;
+    /* height: 56%; */
     border-radius: 20px;
 }
 
@@ -134,6 +133,7 @@ body{
 #hobbies{
     font-size: 18px;
     text-indent: 2%;
+    margin-bottom: 3%;
 }
 
 #bottomPictures{
@@ -145,5 +145,60 @@ body{
     width: 48%;
     height: 36%;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    #pictures{
+        flex-direction: column;
+    }
+    #picture{
+        width: 60%;
+    }
+    #nameAndLinks{
+        margin-left: 0%;
+        width: 60%;
+    }
+    #skillTitle{
+        text-align: center;
+    }
+    #mainContent{
+        width: 80%;
+        /* font-size: 12px; */
+    }
+    #aboutText{
+        font-size: 16px;
+    }
+    
+    #homeTown{
+        font-size: 16px;
+    }
+    
+    #hobbies{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    #name{
+        width: 150%;
+        margin-left: -25%;
+        font-size: 22px;
+    }
+    #mainContent{
+        width: 90%;
+        /* font-size: 12px; */
+    }
+    #aboutText{
+        font-size: 14px;
+    }
+    
+    #homeTown{
+        font-size: 14px;
+    }
+    
+    #hobbies{
+        font-size: 14px;
+    }
+
 }
 
