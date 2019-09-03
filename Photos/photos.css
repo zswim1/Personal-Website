@@ -3,6 +3,10 @@ html, body{
     /* overflow: hidden; */
 }
 
+img {
+    height: auto;
+}
+
 #topBar{
     display: flex;
     flex-direction: row;
