@@ -116,6 +116,10 @@
         width: 60%;
         margin-left: 15%;
     }
+    .youtubeLink{
+        text-align: center;
+        margin-right: 10%;
+    }
     #mainContent{
         width: 80%;
         margin-left: 12%;
@@ -132,7 +136,7 @@
 @media only screen and (max-width: 650px) {
     .projImage{
         width: 75%;
-        margin-left: 7.5%;
+        margin-left: 12.5%;
     }
     #mainContent{
         width: 90%;
@@ -148,6 +152,12 @@
     #projectAndButton{
         display: flex;
         flex-direction: column;
+    }
+    .youtubeLink{
+        margin-right: 0%;
+    }
+    .techHeader{
+        text-align: center;
     }
 }
 
