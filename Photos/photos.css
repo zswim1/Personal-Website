@@ -1,12 +1,3 @@
-html, body{
-    /* height: 100%; */
-    /* overflow: hidden; */
-}
-
-img {
-    height: auto;
-}
-
 #topBar{
     display: flex;
     flex-direction: row;
@@ -132,8 +123,8 @@ img {
     .techHeader{
         text-align: center;
     }
-    body{
-        font-size: 4px;
+    #topBar{
+        font-size: 13px;
     }
 }
 

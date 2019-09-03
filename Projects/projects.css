@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    background-color: lightblue
+    background-color: lightblue;
 }
 
 #nameHeader{
@@ -177,7 +177,7 @@
         font-size: 15px;
     }
 
-    body{
+    #topBar{
         font-size: 13px;
     }
     #sections{
