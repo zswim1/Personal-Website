@@ -1,0 +1,173 @@
+.hidden{
+    display: none !important;
+}
+
+.selected{
+    background-color: darkblue;
+    color: white;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#beforeStart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+}
+
+#duringExercise{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#afterFinish{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainHeader{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 12vw;
+}
+
+button{
+    font-size: 7vw;
+    line-height: 125%;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#startButton{
+    margin-top: 15%;
+    background-color: lightgreen;
+}
+
+#finishButton{
+    background-color: lightcoral;
+}
+
+.sectionHeader{
+    font-size: 6.5vw;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.radioSection{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.timeLabel{
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#time{
+    font-weight: bold;
+}
+
+#timeHolder{
+    font-weight: bold;
+}
+
+.distanceLabel{
+    margin-bottom: 15%;
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#distance{
+    font-weight: bold;
+}
+
+#distanceHolder{
+    font-weight: bold;
+}
+#intervalTimes{
+    line-height: 125%;
+    margin-bottom: 3%;
+    font-size: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intervalHeader{
+    margin-bottom: 2.5%;
+    font-size: 7vw;
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 2.5%;
+    border-bottom: 2px solid black;
+}
+
+.intervalPair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
+}
+
+
+#summaryHeader{
+    font-size: 8vw;
+    /* font-weight: bold; */
+    margin-bottom: 6%;
+    margin-top: 8%;
+}
+
+/* #distanceCovered{
+    margin-bottom: 2%;
+    font-size: 7vw;
+}
+
+#timeUsed{
+    margin-bottom: 2%;
+    font-size: 7vw;
+} */
+
+#pace{
+    margin-bottom: 2%;
+}
+
+#splits{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#splitHeader{
+    margin-bottom: 1%;
+}
+#splitContent{
+    line-height: 125%;
+}
