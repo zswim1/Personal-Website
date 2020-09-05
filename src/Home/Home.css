@@ -1,0 +1,78 @@
+.Bold{
+    color: black;
+  }
+
+#mainContent{
+    width: 70%;
+    margin-left: 15%;
+    height: 95vh;
+}
+
+#pictures{
+    padding-top: 4%;
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#picture{
+    width: 40%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#nameAndLinks{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name{
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+    /* margin-top: 3%; */
+}
+
+#links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+#skillTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#skills{
+    font-size: 18px;
+    line-height: 140%;
+}
+
+#aboutMe{
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#about{
+    font-size: 20px;
+}
+
+#aboutTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#aboutText{
+    width: 90%;
+    margin-left: 5%;
+}
