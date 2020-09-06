@@ -3,7 +3,6 @@ import React, {useState, useEffect} from 'react';
 import './Exercise.css';
 import Button from 'react-bootstrap/Button';
 import useStateWithCallback from 'use-state-with-callback';
-import {ReactBingmaps} from 'react-bingmaps';
 import ReactMapGL, {Marker} from 'react-map-gl';
 // import 'https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css';
 
@@ -27,7 +26,7 @@ function Exercise(){
     const [isSoundOn, setSound] = useState(true);
     const [trackTime, setTrackTime] = useState(false);
     const [once, setOnce] = useState(true);
-    const [finishTime, setFinishTime] = useState("");
+    // const [finishTime, setFinishTime] = useState("");
     const [startTime, setStartTime] = useStateWithCallback("", startTime => {
         if(startTime !== "" && once){
             setOnce(false);
@@ -178,10 +177,10 @@ function Exercise(){
         setDisplayDist(distString);
     }
 
-    const addInterval = () => {
-        var totalDist = distance + getDistance();
-        checkInterval(totalDist);
-    }
+    // const addInterval = () => {
+    //     var totalDist = distance + getDistance();
+    //     checkInterval(totalDist);
+    // }
 
     const getDistance = () => {
         if(currentInterval === 1){
